@@ -1,4 +1,11 @@
-A = int(input())
-B = int(input())
-C = int(input())
-print((A < B < C) or (C < B < A))
+# Ввод: три целых числа A, B, C
+A = int(input())  # первое число
+B = int(input())  # число, которое проверяем
+C = int(input())  # третье число
+
+# Проверяем, находится ли B между A и C (в любом порядке)
+# Условие истинно если: A < B < C ИЛИ C < B < A
+result = (A < B < C) or (C < B < A)
+
+# Вывод: True если число B между A и C, иначе False
+print(result)
