@@ -1,0 +1,13 @@
+def AddRightDigit(D, K):
+    return K * 10 + D
+
+
+K = int(input("Введите число K: "))
+D1 = int(input("Введите цифру D1 (0–9): "))
+D2 = int(input("Введите цифру D2 (0–9): "))
+
+K = AddRightDigit(D1, K)
+print("После добавления D1:", K)
+
+K = AddRightDigit(D2, K)
+print("После добавления D2:", K)
